@@ -43,3 +43,6 @@ let g:ctrlp_custom_ignore = {
 
 " ... regex mode by default
 let g:ctrlp_regexp = 1
+
+" working path from root of starting directory
+let g:ctrlp_working_path_mode = 'a'
