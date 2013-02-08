@@ -30,3 +30,15 @@ nmap Q gqap
 nnoremap j gj
 nnoremap k gk
 
+" ctrlp plugin settings
+
+" ... add ignore rules
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ }
+
+" ... regex mode by default
+let g:ctrlp_regexp = 1
