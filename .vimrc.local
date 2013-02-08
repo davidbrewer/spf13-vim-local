@@ -13,6 +13,7 @@ let g:indent_guides_enable_on_vim_startup = 0
 
 " start out files with all folds opened
 autocmd Syntax * normal zR
+let g:DisableAutoPHPFolding = 1
 
 " Quickly edit/reload the vimrc file
 nmap <silent> <leader>ev :e ~/.vimrc.local<CR>
