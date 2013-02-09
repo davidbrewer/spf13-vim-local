@@ -1,0 +1,31 @@
+set mouse=
+set nospell
+
+set background=dark
+colorscheme mustang
+
+" map ; to : to save all those senseless shifts
+nnoremap ; :
+
+" don't display indent guides on startup ( enable with ,ig )
+let g:indent_guides_enable_on_vim_startup = 0
+
+" start out files with all folds opened
+autocmd Syntax * normal zR
+
+" Quickly edit/reload the vimrc file
+nmap <silent> <leader>ev :e ~/.vimrc.local<CR>
+nmap <silent> <leader>sv :so ~/.vimrc.local<CR>
+
+" Add support for 'paste mode', which allows you to mass paste text without it
+" getting munged.
+set pastetoggle=<F2>
+
+" Use Q for formatting the current paragraph (or selection)
+vmap Q gq
+nmap Q gqap
+
+" remap up and down so that they don't jump past wrapped lines
+nnoremap j gj
+nnoremap k gk
+
