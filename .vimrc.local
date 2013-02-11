@@ -5,7 +5,8 @@ set background=dark
 colorscheme mustang
 
 " map ; to : to save all those senseless shifts
-nnoremap ; :
+" but wait -- that ; can be useful!
+" "nnoremap ; :
 
 " don't display indent guides on startup ( enable with ,ig )
 let g:indent_guides_enable_on_vim_startup = 0
