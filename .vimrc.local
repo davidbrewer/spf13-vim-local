@@ -2,7 +2,7 @@ set mouse=
 set nospell
 
 set background=dark
-colorscheme mustang
+colorscheme darkburn
 
 " map ; to : to save all those senseless shifts
 " but wait -- that ; can be useful!
@@ -46,3 +46,6 @@ let g:ctrlp_regexp = 1
 
 " working path from root of starting directory
 let g:ctrlp_working_path_mode = 'a'
+
+" don't remember position in svn and git commit temporary files
+let g:skipview_files = ['*\.vim', 'svn-commit\.*', 'COMMIT_EDITMSG']"
