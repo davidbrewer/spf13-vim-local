@@ -41,11 +41,25 @@ let g:skipview_files = ['*\.vim', 'svn-commit\.*', 'COMMIT_EDITMSG']"
 " command, but that ends up causing our custom ignore rules to
 " be useless because it overrides them. So instead, we'll fall back
 " to the default ctrlp behavior of globbing, which works with the ignore
-" rules.
+" rules. You have to do this here rather than the bundles file or else it
+" gets overwritten.
 unlet g:ctrlp_user_command
 let g:ctrlp_user_command = ''
 
-" let's modify those ignore rules slightly"
+" let's modify those ignore rules slightly
 let g:ctrlp_custom_ignore = {
     \ 'dir':  '\.git$\|\.hg$\|\.svn\|cache$',
     \ 'file': '\.exe$\|\.so$\|\.dll$' }
+
+" ... regex mode by default
+let g:ctrlp_regexp = 1
+
+" show hidden files, such as dotfiles
+let g:ctrlp_show_hidden = 1
+
+" working path from root of starting directory
+let g:ctrlp_working_path_mode = 'a'
+
+" bind ctrl-P to run ctrlp in buffer mode
+nnoremap <silent> <leader>b :CtrlPBuffer<CR>
+
