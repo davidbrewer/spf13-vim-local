@@ -75,3 +75,6 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
+
+" Disable annoying closing of quotes, braces, etc.
+UnBundle 'spf13/vim-autoclose'
