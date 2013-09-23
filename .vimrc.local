@@ -99,4 +99,7 @@ endfunction"}}
 "map ^[[H g0
 "imap ^[[H ^Og0
 
+" replace parts of airline status bar we aren't using with information we can
+let g:airline_section_b = '%{getcwd()}'
+let g:airline_section_c = '%t'
 
