@@ -1,7 +1,0 @@
-" use the default leader. This MUST be in .vimrc.bundles.local to work
-let g:spf13_leader='\'
-
-" don't automatically change directory to the current file location
-" This MUST be in .vimrc.bundles.local to work
-let g:spf13_no_autochdir = 1
-

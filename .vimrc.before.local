@@ -1,0 +1,34 @@
+"spf13 options {
+
+    " Prevent automatically changing to open file directory
+    let g:spf13_no_autochdir = 1
+
+    " Disable views
+    "   let g:spf13_no_views = 1
+
+    " Leader key
+    let g:spf13_leader='\'
+
+    " Disable easier moving in tabs and windows
+    "   let g:spf13_no_easyWindows = 1
+
+    " Disable fast tab navigation
+    "   let g:spf13_no_fastTabs
+
+    " Clear search highlighting
+    "   let g:spf13_clear_search_highlight = 1
+
+    " Disable neosnippet expansion
+    "   let g:spf13_no_neosnippet_expand = 1
+
+    " Disable whitespace stripping
+    "   let g:spf13_keep_trailing_whitespace = 1
+
+    " Enable powerline symbols
+    let g:airline_powerline_fonts = 1
+
+    " vim files directory
+    "   let g:spf13_consolidated_directory = <full path to desired directory>
+    "   eg: let g:spf13_consolidated_directory = $HOME . '/.vim/'
+
+"}
