@@ -65,10 +65,10 @@ nnoremap <silent> <leader>b :CtrlPBuffer<CR>
 
 " let's turn off arrow keys to get used to using the proper keys for
 " navigation
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
+"map <up> <nop>
+"map <down> <nop>
+"map <left> <nop>
+"map <right> <nop>
 
 " Easy window navigation
 map <C-h> <C-w>h
