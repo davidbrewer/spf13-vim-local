@@ -82,3 +82,11 @@ UnBundle 'spf13/vim-autoclose'
 set shiftwidth=2                " Use indents of 2 spaces
 set tabstop=2                   " An indentation every two columns
 set softtabstop=2               " Let backspace delete indent
+
+" disable automatic autocomplete, instead only do it on <Tab>
+let g:neocomplcache_disable_auto_complete = 1
+inoremap <expr><TAB> pumvisible() ? "\<C-n>" : <SID>check_back_space() ? "\<TAB>" : "\<C-x>\<C-u>"
+function! s:check_back_space()"{{{
+let col = col('.') - 1
+return !col || getline('.')[col - 1] =~ '\s'
+endfunction"}}
