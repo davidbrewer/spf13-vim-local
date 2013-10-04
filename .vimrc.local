@@ -104,3 +104,13 @@ set softtabstop=2               " Let backspace delete indent
 let g:airline_section_b = '%{getcwd()}'
 let g:airline_section_c = '%t'
 
+" for now we're not going to use the full php linting chain,
+" instead just show syntax errors
+"let g:syntastic_php_checkers=['php', 'phpcs', 'phpmd']
+"let g:syntastic_php_phpcs_args = "--standard=psr2 -n --report=csv"
+let g:syntastic_php_checkers=['php', 'phpmd']
+
+" Map F1 to Esc, since that's what I'm usually reach for when I 
+" accidentally hit it!
+map <F1> <Esc>
+imap <F1> <Esc>
