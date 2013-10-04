@@ -48,7 +48,7 @@ let g:ctrlp_user_command = ''
 
 " let's modify those ignore rules slightly
 let g:ctrlp_custom_ignore = {
-    \ 'dir':  '\.git$\|\.hg$\|\.svn\|cache$',
+    \ 'dir':  '\.git$\|\.hg$\|\.svn\|cache$\|\/web\/assets$',
     \ 'file': '\.exe$\|\.so$\|\.dll$' }
 
 " ... regex mode by default
