@@ -19,6 +19,14 @@ let g:DisableAutoPHPFolding = 1
 nmap <silent> <leader>ev :e ~/.vimrc.local<CR>
 nmap <silent> <leader>sv :so ~/.vimrc.local<CR>
 
+"custom copy'n'paste
+"slightly modified version of tip from brudermarkus on vim.wikia.com
+"use leader y to yank content to a temporary buffer file, leader p
+"to paste it. This supports pasting between instances of vim.
+vmap <silent> <leader>y :w! ~/.vbuf<CR>
+nmap <silent> <leader>y :.w! ~/.vbuf<CR>
+nmap <silent> <leader>p :r ~/.vbuf<CR>
+
 " Add support for 'paste mode', which allows you to mass paste text without it
 " getting munged.
 set pastetoggle=<F2>
