@@ -5,3 +5,6 @@ if !exists('g:spf13_bundle_groups')
     " My more limited list
     let g:spf13_bundle_groups=['general', 'programming', 'php', 'ruby', 'python', 'javascript', 'haskell', 'html', 'misc']
 endif
+
+" add dbext database management plugin
+Bundle 'vim-scripts/dbext.vim'
