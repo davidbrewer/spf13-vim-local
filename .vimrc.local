@@ -123,3 +123,8 @@ let g:syntastic_php_checkers=['php', 'phpmd']
 " accidentally hit it!
 map <F1> <Esc>
 imap <F1> <Esc>
+
+" Since I use an aliased grep, tell various parts of the config to 
+" use a raw grep instead
+let g:gitgutter_escape_grep = 1
+"set grepprg=grep\ -nH
