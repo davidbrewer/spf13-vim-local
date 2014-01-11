@@ -1,5 +1,12 @@
 "spf13 options {
 
+    " Full list of bundles
+    "let g:spf13_bundle_groups=['general', 'neocomplcache', 'programming', 'php', 'ruby', 'python', 'go', 'twig', 'javascript', 'haskell', 'html', 'misc', 'scala', 'snipmate', 'youcompleteme', 'neocomplete']
+
+    " My more limited list
+    let g:spf13_bundle_groups=['general', 'programming', 'php', 'ruby', 'python', 'javascript', 'haskell', 'html', 'misc', 'youcompleteme']
+
+
     " Prevent automatically changing to open file directory
     let g:spf13_no_autochdir = 1
 

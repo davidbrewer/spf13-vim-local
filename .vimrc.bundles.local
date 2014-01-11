@@ -1,10 +1,2 @@
-if !exists('g:spf13_bundle_groups')
-    " Full list of bundles
-    "let g:spf13_bundle_groups=['general', 'neocomplcache', 'programming', 'php', 'ruby', 'python', 'go', 'twig', 'javascript', 'haskell', 'html', 'misc', 'scala', 'snipmate', 'youcompleteme', 'neocomplete']
-
-    " My more limited list
-    let g:spf13_bundle_groups=['general', 'programming', 'php', 'ruby', 'python', 'javascript', 'haskell', 'html', 'misc']
-endif
-
 " add dbext database management plugin
 Bundle 'vim-scripts/dbext.vim'
