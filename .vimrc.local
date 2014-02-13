@@ -128,3 +128,6 @@ imap <F1> <Esc>
 " use a raw grep instead
 let g:gitgutter_escape_grep = 1
 "set grepprg=grep\ -nH
+
+" Map F5 to a simple menu of buffers 
+nnoremap <F5> :buffers<CR>:buffer<Space>
