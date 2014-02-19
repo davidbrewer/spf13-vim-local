@@ -69,4 +69,13 @@
     " Require a special keypress to enter multiple cursors mode
     "   let g:multi_cursor_start_key='+'
 
+    " turn on the "fix arrow keys" toggle 
+    "let g:spf13_screen_mapping = 1
+
+    " disable wrap relative motion for start/end line motions
+    let g:spf13_no_wrapRelMotion = 1
+
+    " disable omni complete (this was causing arrow key problems
+    " when in insert mode)
+    let g:spf13_no_omni_complete = 1
 "}
