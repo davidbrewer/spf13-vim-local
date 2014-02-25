@@ -1,6 +1,9 @@
 " add dbext database management plugin
 Bundle 'vim-scripts/dbext.vim'
 
+" add lilypad integration
+Bundle 'gisraptor/vim-lilypond-integrator'
+
 " remove coloresque because it is causing problems with iskeyword 
 " (periods are not separating keywords)
 UnBundle 'gorodinskiy/vim-coloresque'
