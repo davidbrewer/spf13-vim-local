@@ -87,6 +87,7 @@ map <C-l> <C-w>l
 " Disable annoying closing of quotes, braces, tags, etc.
 UnBundle 'spf13/vim-autoclose'
 UnBundle 'amirh/HTML-AutoCloseTag'
+let g:autoclose_on = 0
 
 set shiftwidth=2                " Use indents of 2 spaces
 set tabstop=2                   " An indentation every two columns
