@@ -132,3 +132,7 @@ let g:gitgutter_escape_grep = 1
 
 " Map F5 to a simple menu of buffers 
 nnoremap <F5> :buffers<CR>:buffer<Space>
+
+" Remove period from keyword definition, so that
+" motions stop at periods.
+set iskeyword -=.
