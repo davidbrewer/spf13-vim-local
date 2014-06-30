@@ -136,3 +136,9 @@ nnoremap <F5> :buffers<CR>:buffer<Space>
 " Remove period from keyword definition, so that
 " motions stop at periods.
 set iskeyword -=.
+
+" Set g:haddock_browser to prevent annoying errors when opening Haskell files
+let g:haddock_browser="/usr/bin/firefox"
+
+" by default, when you do a replace replace all cases on the line
+set gdefault
