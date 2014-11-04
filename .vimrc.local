@@ -142,3 +142,6 @@ let g:haddock_browser="/usr/bin/firefox"
 
 " by default, when you do a replace replace all cases on the line
 set gdefault
+
+" Toggle line numbers and signs column
+nmap <silent> <leader>l :set invnumber<CR>:SignifyToggle<CR>
