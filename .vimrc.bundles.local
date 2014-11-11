@@ -7,3 +7,6 @@ Bundle 'gisraptor/vim-lilypond-integrator'
 " remove coloresque because it is causing problems with iskeyword 
 " (periods are not separating keywords)
 UnBundle 'gorodinskiy/vim-coloresque'
+
+" add vim-unimpaired for some handy keybindings
+Bundle 'tpope/vim-unimpaired'
