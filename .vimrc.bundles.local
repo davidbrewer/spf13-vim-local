@@ -10,3 +10,6 @@ UnBundle 'gorodinskiy/vim-coloresque'
 
 " add vim-unimpaired for some handy keybindings
 Bundle 'tpope/vim-unimpaired'
+
+" add ag.vim for fast code search
+Bundle 'rking/ag.vim'

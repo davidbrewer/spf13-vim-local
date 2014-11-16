@@ -11,5 +11,7 @@ This repo contains my local customizations of the distribution. Start by
 installing spf13-vim using the instructions from the repo above. Then, install
 these local customizations as follows:
 
+    sudo aptitude install silversearcher-ag
     git clone https://github.com/davidbrewer/spf13-vim-local ~/.spf13-vim-local
     ~/.spf13-vim-local/create-symlinks.sh
+    ~/.spf13-vim-local/cleanup-bundles
