@@ -16,3 +16,6 @@ Bundle 'rking/ag.vim'
 
 " add vim-textobj-rubyblock to selecting ruby blocks
 Bundle 'nelstrom/vim-textobj-rubyblock'
+
+" puppet support in vim
+Bundle 'rodjek/vim-puppet'
