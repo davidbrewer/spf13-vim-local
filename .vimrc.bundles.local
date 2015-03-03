@@ -13,3 +13,6 @@ Bundle 'tpope/vim-unimpaired'
 
 " add ag.vim for fast code search
 Bundle 'rking/ag.vim'
+
+" add vim-textobj-rubyblock to selecting ruby blocks
+Bundle 'nelstrom/vim-textobj-rubyblock'
