@@ -165,5 +165,28 @@ endif
 map <silent> <leader>k :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 
+" Python settings!
+" Re-map breakpoint support as it conflicts with my buffer search
+let g:pymode_breakpoint = 1
+let g:pymode_breakpoint_bind = '<leader>k'
+
+" Defines a function which calls NERDTreeFind if we have an open
+" buffer, but NERDTreeToggle if we don't. This makes it so we can
+" always open NERDTree in the appropriate directory.
+function! NERDTreeToggleInCurDir()
+  " If NERDTree is open in the current buffer
+  if (exists("t:NERDTreeBufName") && bufwinnr(t:NERDTreeBufName) != -1)
+    exe ":NERDTreeClose"
+  else
+    if (expand("%:t") != '')
+      exe ":NERDTreeFind"
+    else
+      exe ":NERDTreeToggle"
+    endif
+  endif
+endfunction
+
+map <leader>e :call NERDTreeToggleInCurDir()<CR>
+nmap <leader>nt :call NERDTreeToggleInCurDir()<CR>
 
 

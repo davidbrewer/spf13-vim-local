@@ -19,3 +19,6 @@ Bundle 'nelstrom/vim-textobj-rubyblock'
 
 " puppet support in vim
 Bundle 'rodjek/vim-puppet'
+
+" flake8 code linter for python
+Bundle 'nvie/vim-flake8'
